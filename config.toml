@@ -1,0 +1,31 @@
+# The URL the site will be built for
+# base_url = "https://zola-clean-blog.netlify.app"
+base_url = "https://matthewholdenportfolio.com"
+generate_rss = true
+compile_sass = true
+
+title = "Matt Holden"
+description = "Portfolio and Personal Website"
+highlight_code = true
+theme = 'zola-clean-blog'
+
+taxonomies = [
+    {name = "categories", rss = true, paginate_by=5},
+    {name = "tags", rss = true, paginate_by=5},
+]
+
+[extra]
+author = "Matt"
+clean_blog_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/contact", name = "Contact"},
+    {url = "$BASE_URL/files/MatthewHolden_Resume.pdf", name = "Resume"},
+    {url = "$BASE_URL/zola", name = "Zola"}
+]
+clean_blog_social = [
+    {url = "https://github.com/matthold86", icon="fab fa-github"},
+    {url = "https://www.linkedin.com/in/matthew-holden86/", icon="fab fa-linkedin"}
+]
+#username = "Anon Developer"
+#user_description = "Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS."
+#user_title = "Software Developer"
